@@ -1,0 +1,24 @@
+###
+GET http://localhost:5000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImVtYWlsIjoiYWdpQGdtYWlsLmNvbSIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5OTEyNzA2NiwiZXhwIjoxNjk5MTI3MDg2fQ.dDidJIohzTeqDtu_tG4eKGbYT5Wxvspd82j5T51jGuw
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "email":"agi@gmail.com",
+    "name":"Admin",
+    "password":"123456",
+    "confPassword":"123456"
+}
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"agi@gmail.com",
+    "password":"123456"
+}
+###
+GET http://localhost:5000/token
